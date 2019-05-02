@@ -13,6 +13,8 @@
 
         function Server($_SOCKET, $user, $_USERS) {
             //server
+
+            //example
             ExecuteJS($user, "alert('JS')");
 
         }
