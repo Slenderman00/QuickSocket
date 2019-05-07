@@ -1,5 +1,5 @@
 <?php
-require dirname(__DIR__) . '/Clank/vendor/autoload.php';
+require dirname(__DIR__) . '/QuickSocket/vendor/autoload.php';
 
 use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
