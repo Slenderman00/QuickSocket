@@ -58,7 +58,7 @@ function collectFormData(form) {
     
     for(i = 0;i < elements.length; i++)
     {
-        Variable(elements[i].name, elements[i].value);
+        variable(elements[i].name, elements[i].value);
     }
 }
 

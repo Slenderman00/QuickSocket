@@ -15,8 +15,14 @@
             //server
 
             //example
-            ExecuteJS($user, "alert('JS')");
-
+            if(isset($_SOCKET["name"])) {
+                //checking if request exsists
+                if($_SOCKET["name"] != "") {
+                    $name = $_SOCKET["name"];
+                    //Executing JS on user
+                    ExecuteJS($user, "alert('Hey $name!')");
+                }
+            }
         }
     };
 
