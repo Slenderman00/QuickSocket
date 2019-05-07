@@ -47,5 +47,8 @@ function AlertName(name) {
 ```
 This example demonstrates usage of the SOCKET form method
 
+### How to start
+To launch the Quicksocket just open QuickSocket.php in PHP-CLI and start a normal webserver with PHP-FPM
+
 ### DISCLAIMER
 QuickSockets should not be used by anyone for anything, yet
