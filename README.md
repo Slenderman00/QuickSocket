@@ -1,7 +1,7 @@
 <img src="https://cdn-images-1.medium.com/max/1200/1*Ih7G_D_hzoskYTHfa-zNmw.png" width="100" title="Build">
 
 # QuickSocket
-QuickSocket is a library used for php server client XSS
+QuickSocket is a library used for php server client cross-language scripting
 
 # Usage
 
