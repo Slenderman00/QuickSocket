@@ -44,12 +44,10 @@ function Clear() {
 }
 
 function submit() {
-    console.log(variables);
     var data = {};
     data["file"] = Filename();
     data["var"] = variables; 
-    console.log(data);
-    console.log(JSON.stringify(data))
+    console.log('%c Sending: ' + JSON.stringify(data), 'background: #222; color: #bada55');
     WS.send(JSON.stringify(data));
 }
 
@@ -91,7 +89,7 @@ function parseHTML() {
 
 function parseIncomming(e) {
     //parsing json to be feed into different functions
-    console.log("Parsing: " + e.data);
+    console.log("%c Parsing: " + e.data, 'background: #222; color: #da6b55');;
     data = JSON.parse(e.data);
 
     //executing js
@@ -106,7 +104,6 @@ function extractArguments(_function) {
     //un-shittyftying arguments
 
     for(i = 0; i <= Object.keys(args).length - 1; i++) {
-        console.log('test');
         args[i] = args[i].replace("'", "");
         args[i] = args[i].replace("'", "");
     }
